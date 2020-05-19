@@ -7,6 +7,7 @@ all: directories
 	gcc threads.c -l pthread -o ./bin/threads
 	gcc conds.c dlist.c -l pthread -o ./bin/cond
 	gcc gray.c -lm -o ./bin/gray
+	gcc root.c -lm -o ./bin/root
 
 clean:
 	@$(RM) -rf $(BUILDDIR) @$(RM) -rf $(TARGETDIR)
