@@ -8,6 +8,7 @@ all: directories
 	gcc conds.c dlist.c -l pthread -o ./bin/cond
 	gcc gray.c -lm -o ./bin/gray
 	gcc root.c -lm -o ./bin/root
+	gcc fetch.c -l curl -o ./bin/fetch
 
 clean:
 	@$(RM) -rf $(BUILDDIR) @$(RM) -rf $(TARGETDIR)
