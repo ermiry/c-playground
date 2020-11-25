@@ -9,6 +9,7 @@ all: directories
 	gcc gray.c -lm -o ./bin/gray
 	gcc root.c -lm -o ./bin/root
 	gcc fetch.c -l curl -o ./bin/fetch
+	gcc sanitize.c -l curl -o ./bin/sanitize
 
 clean:
 	@$(RM) -rf $(BUILDDIR) @$(RM) -rf $(TARGETDIR)
